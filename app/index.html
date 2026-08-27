@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PagoSeguro — Estado de Transacciones</title>
+  <title>PagoSeguro — ¡Acción de Vercel Exitosa!</title>
   <style>
     :root { 
       --navy: #1E2761; 
@@ -22,7 +22,6 @@
     
     main { padding:28px 24px; max-width:900px; margin:0 auto; }
     
-    /* Metrics Summary Cards */
     .metrics-grid {
       display: table;
       width: 100%;
@@ -36,13 +35,12 @@
       border-radius: 8px;
       box-shadow: 0 1px 4px rgba(0,0,0,0.06);
       border-left: 4px solid var(--navy);
-      margin-right: 12px;
     }
     .metric-card.ok { border-left-color: var(--green); }
     .metric-card.pend { border-left-color: var(--amber); }
     .metric-card.err { border-left-color: var(--red); }
     
-    .metric-label { font-size: 11px; text-transform: uppercase; tracking: 0.5px; color: #5a6482; font-weight: bold; }
+    .metric-label { font-size: 11px; text-transform: uppercase; color: #5a6482; font-weight: bold; }
     .metric-value { font-size: 20px; font-weight: bold; margin-top: 4px; color: var(--navy); }
     
     .table-container {
@@ -89,29 +87,29 @@
 </head>
 <body>
   <header>
-    <h1>PagoSeguro · Dashboard de Transacciones</h1>
-    <p>Reporte en tiempo real de operaciones procesadas hoy</p>
+    <h1>PagoSeguro · Dashboard de Transacciones (Edición Vercel Deploy 🚀)</h1>
+    <p>¡Si estás viendo esto en el link de Vercel, tu GitHub Actions FUNCIONÓ al 100%! 🎉</p>
   </header>
   
   <main>
     <!-- Métricas del día -->
     <table class="metrics-grid" style="border-spacing: 12px 0; margin: 0 -12px 24px -12px;">
       <tr>
-        <td class="metric-card" style="border-bottom:none;">
-          <div class="metric-label">Monto Total Processado</div>
-          <div class="metric-value">S/ 513.40</div>
+        <td class="metric-card">
+          <div class="metric-label">Monto Total Procesado</div>
+          <div class="metric-value">S/ 9,999.99</div>
         </td>
-        <td class="metric-card ok" style="border-bottom:none;">
-          <div class="metric-label">Liquidadas</div>
-          <div class="metric-value">2 (S/ 441.40)</div>
+        <td class="metric-card ok">
+          <div class="metric-label">Pollo a la Brasa</div>
+          <div class="metric-value">100% Pagado</div>
         </td>
-        <td class="metric-card pend" style="border-bottom:none;">
-          <div class="metric-label">En Proceso</div>
-          <div class="metric-value">1 (S/ 54.00)</div>
+        <td class="metric-card pend">
+          <div class="metric-label">Aprobación del Profe</div>
+          <div class="metric-value">En Proceso ⏳</div>
         </td>
-        <td class="metric-card err" style="border-bottom:none;">
-          <div class="metric-label">Rechazadas</div>
-          <div class="metric-value">1 (S/ 18.00)</div>
+        <td class="metric-card err">
+          <div class="metric-label">Bugs en Prod</div>
+          <div class="metric-value">0 (Ojalá) 🤞</div>
         </td>
       </tr>
     </table>
@@ -129,34 +127,33 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Se pobla desde Supabase (tabla `transacciones`) en la versión con datos -->
           <tr>
-            <td class="font-mono">TX-1042</td>
-            <td><strong>Bodega La Esquina</strong></td>
-            <td>10:14 AM</td>
-            <td class="text-right font-mono">128.50</td>
+            <td class="font-mono">TX-9991</td>
+            <td><strong>Porky Burguer & Papas</strong></td>
+            <td>03:14 AM</td>
+            <td class="text-right font-mono">45.00</td>
             <td style="text-align: center;"><span class="badge ok">Liquidada</span></td>
           </tr>
           <tr>
-            <td class="font-mono">TX-1043</td>
-            <td><strong>Farmacia Zeta</strong></td>
-            <td>10:22 AM</td>
-            <td class="text-right font-mono">54.00</td>
-            <td style="text-align: center;"><span class="badge pend">En proceso</span></td>
+            <td class="font-mono">TX-9992</td>
+            <td><strong>Subscripción a GitHub Copilot</strong></td>
+            <td>04:20 AM</td>
+            <td class="text-right font-mono">38.00</td>
+            <td style="text-align: center;"><span class="badge pend">Procesando...</span></td>
           </tr>
           <tr>
-            <td class="font-mono">TX-1044</td>
-            <td><strong>Librería Andes</strong></td>
-            <td>10:35 AM</td>
-            <td class="text-right font-mono">312.90</td>
+            <td class="font-mono">TX-9993</td>
+            <td><strong>Antojitos de Medianoche</strong></td>
+            <td>05:00 AM</td>
+            <td class="text-right font-mono">12.50</td>
             <td style="text-align: center;"><span class="badge ok">Liquidada</span></td>
           </tr>
           <tr>
-            <td class="font-mono">TX-1045</td>
-            <td><strong>Cafetería Rho</strong></td>
-            <td>10:41 AM</td>
-            <td class="text-right font-mono">18.00</td>
-            <td style="text-align: center;"><span class="badge err">Rechazada</span></td>
+            <td class="font-mono">TX-9994</td>
+            <td><strong>Compra de Paz Mental</strong></td>
+            <td>06:00 AM</td>
+            <td class="text-right font-mono">999.00</td>
+            <td style="text-align: center;"><span class="badge err">Fondos Insuficientes 💔</span></td>
           </tr>
         </tbody>
       </table>
@@ -164,7 +161,7 @@
   </main>
   
   <footer>
-    Build: <span id="build" class="highlight">20222159-v2</span> · <strong>PagoSeguro S.A.C.</strong> — INF384 (Entorno de Desarrollo / PR Action Test)
+    Build: <span id="build" class="highlight">20222159-VERCEL-TEST</span> · <strong>PagoSeguro S.A.C.</strong> — INF384 (¡Pipeline Automático desplegado en Vercel!)
   </footer>
 </body>
 </html>
